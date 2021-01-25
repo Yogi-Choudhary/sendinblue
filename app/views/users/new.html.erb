@@ -1,0 +1,5 @@
+<%= form_with model: @user, local: true do |f| %>
+  Name:<%= f.text_field :name%><br/>
+  Email:<%= f.email_field :email%><br/>
+  <%= f.submit %>
+<% end %>

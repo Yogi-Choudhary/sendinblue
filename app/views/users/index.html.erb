@@ -1,0 +1,13 @@
+<table border=1>
+  <tr>
+    <td> Name </td>
+    <td> Email </td>
+  </tr>
+  <% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+  </tr>
+  <% end %>
+</table>
+<%= link_to "Add User", new_user_path %>
